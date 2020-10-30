@@ -128,9 +128,15 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
+<<<<<<< HEAD
 # We do not commit data to github
 *.csv
 *.zip
+=======
+# we do not commit data to github
+*.zip
+*.csv
+>>>>>>> fde92c08e1480213d3cbe1af6ba911ba44011a19
 *.gz
 
 *.DS_Store
