@@ -10,3 +10,4 @@ home_loan:
 + scikit-learn 0.23.2 - conda install -c anaconda scikit-learn
 + matplotlib 3.3.2 - conda install -c conda-forge matplotlib
 + seaborn 0.11.0 - conda install -c anaconda seaborn
++ mlxtend 0.17.3 - conda install -c conda-forge mlxtend
