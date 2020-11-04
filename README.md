@@ -1,13 +1,82 @@
-# NF_project_2
+# Home Credit Prediction
+Home Credit is a lender who provides loans to populations unable to use traditional credit services. Goal is to lower loan risk by identifying patterns from within historical data. Let's figure out the most predictive data points through some machine learning models.
 
-Environment
+Data used is the Home_Loan dataset.
 
-home_loan:
+## Requirements
+- condamini or conda
+- or pyenv with Python: 3.8.5
 
-+ jupyterlab 2.2.9 - conda install -c conda-forge jupyterlab
-+ pandas 1.1.3 - conda install pandas
-+ numpy 1.19.2 - conda install numpy
-+ scikit-learn 0.23.2 - conda install -c anaconda scikit-learn
-+ matplotlib 3.3.2 - conda install -c conda-forge matplotlib
-+ seaborn 0.11.0 - conda install -c anaconda seaborn
-+ mlxtend 0.17.3 - conda install -c conda-forge mlxtend
+## Environment
+
+home_loan includes:
+
+jupyterlab 2.2.9
+```bash
+conda install -c conda-forge jupyterlab
+```
+
+pandas 1.1.3
+```bash
+conda install pandas
+````
+
+numpy 1.19.2
+```bash
+conda install numpy
+````
+
+scikit-learn 0.23.2
+```bash
+conda install -c anaconda scikit-learn
+```
+matplotlib 3.3.2
+```bash
+conda install -c conda-forge matplotlib
+````
+
+seaborn 0.11.0
+```bash
+conda install -c anaconda seaborn
+````
+
+mlxtend 0.17.3
+```bash
+conda install -c conda-forge mlxtend
+```
+
+imbalanced-learn 0.7.0
+```bash
+-c conda-forge imbalanced-learn
+```
+
+## Setup
+Having Anaconda installed then create your ENV with
+
+```bash
+make setup-conda
+```
+
+With pyenv installed
+
+```bash
+make setup-pyenv
+```
+
+## Usage
+
+In order to train the model and store test data in the data folder and the model in models run:
+
+```bash
+python train.py  
+```
+
+In order to test that predict works on a test set you created run:
+
+```bash
+python predict.py
+```
+
+## Limitations
+
+This project is work in progress.
