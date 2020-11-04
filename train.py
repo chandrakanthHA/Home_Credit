@@ -7,7 +7,9 @@ from sklearn.metrics import classification_report, confusion_matrix, plot_confus
 import warnings
 warnings.filterwarnings('ignore')
 
-from feature_engineering import clean_data
+from feature_engineering import clean_data, get_features
+
+
 
 # Setting random seed
 RSEED = 42
@@ -38,14 +40,7 @@ X_train_balanced, y_train_balanced = X_train_cleaned, y_train_cleaned
 print("Data successfully balanced.")
 
 # Selecting features
-features = ['REGION_POPULATION_RELATIVE', 'FLAG_OWN_CAR', 'FLAG_OWN_REALTY',
-            'REG_REGION_NOT_LIVE_REGION', 'REG_REGION_NOT_WORK_REGION',
-            'LIVE_REGION_NOT_WORK_REGION', 'REG_CITY_NOT_LIVE_CITY',
-            'REG_CITY_NOT_WORK_CITY', 'FLAG_DOCUMENT_2', 'FLAG_DOCUMENT_3',
-            'FLAG_DOCUMENT_4', 'FLAG_DOCUMENT_5', 'FLAG_DOCUMENT_6',
-            'FLAG_DOCUMENT_7', 'FLAG_DOCUMENT_8', 'FLAG_DOCUMENT_9',
-            'FLAG_DOCUMENT_10', 'NAME_FAMILY_STATUS_Married', 'EXT_SOURCE_2',
-            'DAYS_BIRTH']
+features = get_features()
 
 # Training the model
 model = LogisticRegression()
@@ -61,3 +56,4 @@ print("Prediction successful.")
 
 # Print train results
 print(classification_report(y_train_balanced, y_train_pred))
+print(confusion_matrix(y_train_balanced, y_train_pred))

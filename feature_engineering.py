@@ -127,3 +127,15 @@ def clean_data(X, y, test=True):
         pickle.dump(mm_scaler, open("models/mm_scaler.sav", "wb"))
 
     return X, y
+
+
+
+def get_features():
+    return ['REGION_POPULATION_RELATIVE', 'FLAG_OWN_CAR', 'FLAG_OWN_REALTY',
+            'REG_REGION_NOT_LIVE_REGION', 'REG_REGION_NOT_WORK_REGION',
+            'LIVE_REGION_NOT_WORK_REGION', 'REG_CITY_NOT_LIVE_CITY',
+            'REG_CITY_NOT_WORK_CITY', 'FLAG_DOCUMENT_2', 'FLAG_DOCUMENT_3',
+            'FLAG_DOCUMENT_4', 'FLAG_DOCUMENT_5', 'FLAG_DOCUMENT_6',
+            'FLAG_DOCUMENT_7', 'FLAG_DOCUMENT_8', 'FLAG_DOCUMENT_9',
+            'FLAG_DOCUMENT_10', 'NAME_FAMILY_STATUS_Married', 'EXT_SOURCE_2',
+            'DAYS_BIRTH']
