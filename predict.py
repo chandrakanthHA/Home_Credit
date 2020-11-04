@@ -1,4 +1,5 @@
 # Importing packages
+import sys
 import pandas as pd
 import numpy as np
 import pickle
@@ -12,10 +13,15 @@ from feature_engineering import clean_data, get_features
 
 
 
+# Reading the paths to necessary files from system arguments
+model = sys.argv[1]
+X_test_path = sys.argv[2]
+y_test_path = sys.argv[3]
+
 # Load model and data from disk
-model = pickle.load(open("models/model.sav", 'rb'))
-X_test = pd.read_csv("Home_Loan/X_test.csv")
-y_test = pd.read_csv("Home_Loan/y_test.csv")
+model = pickle.load(open(model, 'rb'))
+X_test = pd.read_csv(X_test_path)
+y_test = pd.read_csv(y_test_path)
 print("Model and data successfully loaded.")
 
 # Cleaning the test data

@@ -74,7 +74,7 @@ python train.py
 In order to test that predict works on a test set you created run:
 
 ```bash
-python predict.py
+python predict.py models/model.sav Home_Loan/X_test.csv Home_Loan/y_test.csv
 ```
 
 ## Limitations
