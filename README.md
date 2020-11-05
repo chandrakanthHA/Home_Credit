@@ -6,7 +6,8 @@ Data used is the Home_Loan dataset.
 ## Jupyter Notebooks
 
 * Explanitory data analysis can be found in EDA.ipynb
-*Feature selection is done in 
+* Feature selection is done in in Feature_Selection.ipynb
+* Prediction modelling with hyperparameter tuning is stored in MODEL.ipynb
 
 ## Requirements
 - condamini or conda
