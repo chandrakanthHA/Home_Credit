@@ -3,6 +3,11 @@ Home Credit is a lender who provides loans to populations unable to use traditio
 
 Data used is the Home_Loan dataset.
 
+## Jupyter Notebooks
+
+* Explanitory data analysis can be found in EDA.ipynb
+*Feature selection is done in 
+
 ## Requirements
 - condamini or conda
 - or pyenv with Python: 3.8.5
